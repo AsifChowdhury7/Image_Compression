@@ -14,7 +14,7 @@ def average_intensity(hist):
     unique_colors=0 
     for i in range(256): 
         if hist[i] > 0: unique_colors += 1 
-        return unique_colors 
+    return unique_colors 
 
 def color_count(image_path): 
     image = cv2.imread(image_path) 
