@@ -66,8 +66,8 @@ def histogram_grayscale(GS_image):
     return hist.tolist()
 
 if __name__ == '__main__':
-    image1_location = 'roost.jpg' 
-    image2_location = 'roost.jpg'
+    image1_location = 'roost.png' 
+    image2_location = 'roost.png'
     img = cv2.imread(image1_location, cv2.IMREAD_GRAYSCALE)
     img2 = cv2.imread(image2_location, cv2.IMREAD_GRAYSCALE)
 
