@@ -26,14 +26,14 @@ def color_count(image_path):
 
 if __name__ == '__main__': 
 
-    image1_location = 'rooster.png' 
+    image1_location = 'roost.png' 
 
     img = cv2.imread(image1_location, cv2.IMREAD_GRAYSCALE) 
     img_color = cv2.imread(image1_location, cv2.IMREAD_COLOR) 
 
-    jpeg_75_location = 'rooster_75.jpg' 
-    jpeg_50_location = 'rooster_50.jpg' 
-    jpeg_25_location = 'rooster_25.jpg' 
+    jpeg_75_location = 'roost_75.jpg' 
+    jpeg_50_location = 'roost_50.jpg' 
+    jpeg_25_location = 'roost_25.jpg' 
 
     img_75_color = cv2.imread(jpeg_75_location, cv2.IMREAD_COLOR) 
     img_50_color = cv2.imread(jpeg_50_location, cv2.IMREAD_COLOR) 
@@ -94,7 +94,7 @@ if __name__ == '__main__':
     fig.tight_layout() 
     plt.savefig("multi_bar_chart.png") 
 
-    image_paths = ['rooster.png', 'rooster_75.jpg', 'rooster_50.jpg','rooster_25.jpg'] 
+    image_paths = ['roost.png', 'roost_75.jpg', 'roost_50.jpg','roost_25.jpg'] 
     color_counts = [(image_path, color_count(image_path)) for image_path in image_paths] 
     image_names, counts = zip(*color_counts) 
 
